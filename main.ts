@@ -10,24 +10,14 @@ const servoNumberOne = robotbit.Servos.S1
 
 // start
 basic.clearScreen()
-basic.showIcon(IconNames.Happy)
+basic.showIcon(IconNames.Giraffe)
 
 // move 0 degrees
 input.onButtonPressed(Button.A, function() {
-    robotbit.Servo(servoNumberOne, 0)
-    basic.showNumber(0)
-    basic.clearScreen()
-    basic.showIcon(IconNames.SmallSquare)
-    basic.clearScreen()
-    basic.showIcon(IconNames.Happy)
+    robotbit.Servo(servoNumberOne, 225)
 })
 
 // move 180 degrees
 input.onButtonPressed(Button.B, function() {
     robotbit.Servo(servoNumberOne, 180)
-    basic.showNumber(180)
-    basic.clearScreen()
-    basic.showIcon(IconNames.SmallSquare)
-    basic.clearScreen()
-    basic.showIcon(IconNames.Happy)
 })
